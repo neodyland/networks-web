@@ -1,3 +1,6 @@
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+
 export default function Home() {
     return (
         <>
@@ -17,10 +20,25 @@ export default function Home() {
                 </p>
             </div>
             <div className="py-8">
-                <h2 className="text-2xl font-bold mb-4">料金は？</h2>
+                <h2 className="text-2xl font-bold mb-4">形態</h2>
                 <p>
                     非営利で進めるため、無償で提供しています。しかし、金がかかるため、寄付を受け付けております。寄付金は主にネットワークの維持に使われます。
                 </p>
+            </div>
+            <div className="py-8">
+                <h2 className="text-2xl font-bold mb-4">寄付特典</h2>
+                <p>
+                    VMの貸し出しを一ヶ月貸し出します！(継続で利用する場合は、寄付をお願いします。)
+                </p>
+            </div>
+            <div className="py-8">
+                <h2 className="text-2xl font-bold mb-4">寄付先</h2>
+                <p>以下のリンクから寄付を行うことができます。</p>
+                <Button asChild className="mt-4">
+                    <a href="https://buy.stripe.com/5kQ7sK4QDbkYduidYbcMM09">
+                        寄付する！
+                    </a>
+                </Button>
             </div>
         </>
     );
