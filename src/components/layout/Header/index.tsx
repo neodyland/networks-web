@@ -5,7 +5,7 @@ const Header: React.FC = () => {
     return (
         <header className="py-4 sticky top-0">
             <div className="text-white bg-gray-300/30 max-w-4xl mx-auto w-full px-4 h-14 flex items-center rounded-md justify-between">
-                <h1 className="text-xl font-bold">Neody Networks</h1>
+                <h1 className="text-xl font-bold">NN</h1>
                 <nav className="space-x-4">
                     <Link href="/" className="hover:underline">
                         Home
